@@ -8,7 +8,7 @@ It has also been slightly refactored for better readability.
 ## Usage
 Rough Example Implementation Files
 
-### Scaning US Example
+### Scaning UI Android Compose Example
 ```kotlin
 
 internal fun WriteScreen(
