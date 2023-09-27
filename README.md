@@ -74,12 +74,12 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.rememberMultiplePermissionsState
-importcom.android.scanner.ui.components.*
-importcom.android.scanner.ui.theme.IgniteFolderScannerTheme
-importcom.android.scanner.ui.viewmodels.ConvergenceHandgunState
-importcom.android.scanner.ui.viewmodels.ConvergenceHandgunViewModel
-importcom.android.scanner.ui.viewmodels.DeviceUiState
-importcom.android.scanner.ui.viewmodels.DeviceViewModel
+import com.android.scanner.ui.components.*
+import com.android.scanner.ui.theme.IgniteScannerTheme
+import com.android.scanner.ui.viewmodels.ConvergenceHandgunState
+import com.android.scanner.ui.viewmodels.ConvergenceHandgunViewModel
+import com.android.scanner.ui.viewmodels.DeviceUiState
+import com.android.scanner.ui.viewmodels.DeviceViewModel
 import kotlinx.coroutines.withContext
 
 private const val TAG = "DeviceScanCompose"
@@ -307,7 +307,7 @@ private fun Scanning(viewModel : DeviceViewModel){
 @Preview
 @Composable
 private fun LoadingStatePreview() {
-   IgniteFolderScannerTheme {
+   IgniteScannerTheme {
       Loading()
    }
 }
@@ -316,7 +316,7 @@ private fun LoadingStatePreview() {
 @Preview
 @Composable
 private fun DeviceScanScreenPreview() {
-   IgniteFolderScannerTheme {
+   IgniteScannerTheme {
       Loading()
    }
 }
