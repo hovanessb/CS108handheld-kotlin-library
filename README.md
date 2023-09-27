@@ -179,7 +179,7 @@ internal fun DeviceScreen(
             ) {
                itemsIndexed(deviceState.scanResults.keys.toList()) { _, key ->
                   val name = deviceState.scanResults[key]?.name ?: "Unknown Device"
-                  val title = if (disconnected) name else if(busy) "Connecting..." else "Connected "
+                  val title = if (disconnected) name else if(busy) "Connecting.." else "Connected "
                   val device: BluetoothDevice = deviceState.scanResults.get(key = key)!!
                   Column(modifier = modifier) {
                      Row(horizontalArrangement = Arrangement.SpaceBetween){
@@ -249,7 +249,7 @@ internal fun DeviceScreen(
                   Spacer(modifier=Modifier.padding(4.dp))
                   Slider(convergenceModel.getRfidPowerLevel(),
                          onValueChange = {currentPowerLevel.value=it.toInt()},
-                         valueRange = (0).toFloat()..(300).toFloat(),
+                         valueRange = (0).toFloat().(300).toFloat(),
                          modifier= Modifier
                             .fillMaxWidth()
                             .padding(horizontal = 16.dp),
@@ -334,14 +334,14 @@ import android.widget.TextView
 import androidx.core.text.isDigitsOnly
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-importcom.android.scanner..cs108library.Cs108Library4A
-importcom.android.scanner..cs108library.Cs108Connector
-importcom.android.scanner..cs108library.HostCmdResponseTypes
-importcom.android.scanner..cs108library.ReaderDevice
-importcom.android.scanner..cs108library.OperationTypes
-importcom.android.scanner..cs108library.HostCommands
-importcom.android.scanner..cs108library.Rx000pkgData
-importcom.android.scanner..models.ScanModel
+importcom.android.scanner.cs108library.Cs108Library4A
+importcom.android.scanner.cs108library.Cs108Connector
+importcom.android.scanner.cs108library.HostCmdResponseTypes
+importcom.android.scanner.cs108library.ReaderDevice
+importcom.android.scanner.cs108library.OperationTypes
+importcom.android.scanner.cs108library.HostCommands
+importcom.android.scanner.cs108library.Rx000pkgData
+importcom.android.scanner.models.ScanModel
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 
