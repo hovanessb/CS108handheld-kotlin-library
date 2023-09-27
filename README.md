@@ -334,14 +334,14 @@ import android.widget.TextView
 import androidx.core.text.isDigitsOnly
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-importcom.android.scanner.cs108library.Cs108Library4A
-importcom.android.scanner.cs108library.Cs108Connector
-importcom.android.scanner.cs108library.HostCmdResponseTypes
-importcom.android.scanner.cs108library.ReaderDevice
-importcom.android.scanner.cs108library.OperationTypes
-importcom.android.scanner.cs108library.HostCommands
-importcom.android.scanner.cs108library.Rx000pkgData
-importcom.android.scanner.models.ScanModel
+import com.android.scanner.cs108library.Cs108Library4A
+import com.android.scanner.cs108library.Cs108Connector
+import com.android.scanner.cs108library.HostCmdResponseTypes
+import com.android.scanner.cs108library.ReaderDevice
+import com.android.scanner.cs108library.OperationTypes
+import com.android.scanner.cs108library.HostCommands
+import com.android.scanner.cs108library.Rx000pkgData
+import com.android.scanner.models.ScanModel
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 
