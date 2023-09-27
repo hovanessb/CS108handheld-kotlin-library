@@ -1,6 +1,6 @@
 # cs108-Library-2.8.22-5 in Kotlin
 
-This library was taken from the (CS108 Android Java Bluetooth Demo App)[https://github.com/clsrif/CS108-Android-Java-App] and SDK
+This library was taken from the [CS108 Android Java Bluetooth Demo App](https://github.com/cslrfid/CS108-Android-Java-App) and SDK
 
 Its a Kotlin implementation to use with modern Android Compose. 
 It has also been slightly refactored for better readability.
@@ -74,12 +74,12 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.google.accompanist.permissions.ExperimentalPermissionsApi
 import com.google.accompanist.permissions.rememberMultiplePermissionsState
-import com.incommsys.android.composefolderscanner.ui.components.*
-import com.incommsys.android.composefolderscanner.ui.theme.IgniteFolderScannerTheme
-import com.incommsys.android.composefolderscanner.ui.viewmodels.ConvergenceHandgunState
-import com.incommsys.android.composefolderscanner.ui.viewmodels.ConvergenceHandgunViewModel
-import com.incommsys.android.composefolderscanner.ui.viewmodels.DeviceUiState
-import com.incommsys.android.composefolderscanner.ui.viewmodels.DeviceViewModel
+importcom.android.scanner.ui.components.*
+importcom.android.scanner.ui.theme.IgniteFolderScannerTheme
+importcom.android.scanner.ui.viewmodels.ConvergenceHandgunState
+importcom.android.scanner.ui.viewmodels.ConvergenceHandgunViewModel
+importcom.android.scanner.ui.viewmodels.DeviceUiState
+importcom.android.scanner.ui.viewmodels.DeviceViewModel
 import kotlinx.coroutines.withContext
 
 private const val TAG = "DeviceScanCompose"
@@ -334,14 +334,14 @@ import android.widget.TextView
 import androidx.core.text.isDigitsOnly
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.incommsys.android.composefolderscanner.cs108library.Cs108Library4A
-import com.incommsys.android.composefolderscanner.cs108library.Cs108Connector
-import com.incommsys.android.composefolderscanner.cs108library.HostCmdResponseTypes
-import com.incommsys.android.composefolderscanner.cs108library.ReaderDevice
-import com.incommsys.android.composefolderscanner.cs108library.OperationTypes
-import com.incommsys.android.composefolderscanner.cs108library.HostCommands
-import com.incommsys.android.composefolderscanner.cs108library.Rx000pkgData
-import com.incommsys.android.composefolderscanner.models.ScanModel
+importcom.android.scanner..cs108library.Cs108Library4A
+importcom.android.scanner..cs108library.Cs108Connector
+importcom.android.scanner..cs108library.HostCmdResponseTypes
+importcom.android.scanner..cs108library.ReaderDevice
+importcom.android.scanner..cs108library.OperationTypes
+importcom.android.scanner..cs108library.HostCommands
+importcom.android.scanner..cs108library.Rx000pkgData
+importcom.android.scanner..models.ScanModel
 import kotlinx.coroutines.*
 import kotlinx.coroutines.flow.*
 
